@@ -46,7 +46,6 @@ public class RecursionExplorer {
         System.out.print("Enter choice: ");
     }
 
-    // TODO: We will implement these together
     private long factorial(int n) {
         // Base case
         if (n == 0) {
@@ -57,9 +56,9 @@ public class RecursionExplorer {
     }
 
     private int sum(int n) {
-        // Base case
+        
         if (n == 1) {
-            return 1; // Base case
+            return 1;
         }
         return n + sum(n - 1); // Recursive case
     }
@@ -75,7 +74,7 @@ public class RecursionExplorer {
     }
 
     private String reverseStringTrace(String s, int depth) {
-        // indentation for visualizing recursion depth
+        
         String indent = " ".repeat(depth);
         
         System.out.println(indent + "reverseString(\"" + s + "\"");
@@ -113,7 +112,7 @@ public class RecursionExplorer {
             return;
         }
 
-        // TODO: Call a recursive factorial method here
+
         long result = factorial(n);
         System.out.println("factorial(" + n + ") = " + result);
     }
